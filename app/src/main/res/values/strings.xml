@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MindfulnessProjectQuotesPictures</string>
+    <string name="start_screen_welcome">Welcome to the Mindfulness Project!</string>
+    <string name="start_screen_button">Get Started</string>
+
+
+    <string name="choose_options_title">What do you want to do?</string>
+    <string name="meditation_button_text">Meditation Timer</string>
+</resources>

@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.paul.mindfulnessprojectquotespictures.ChooseOptionsFragment"
+    android:background="@drawable/clouds_animated">
+
+
+    <TextView
+        android:id="@+id/choose_options_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/choose_options_title"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/other_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_button"
+        android:text="Filler Text"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/meditation_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cloud_button"
+        android:text="@string/meditation_button_text"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp"/>
+
+</FrameLayout>
