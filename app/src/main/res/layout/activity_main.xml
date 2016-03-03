@@ -31,7 +31,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|bottom"
         android:text="@string/start_screen_button"
+        android:textSize="40sp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/cloud_button"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
