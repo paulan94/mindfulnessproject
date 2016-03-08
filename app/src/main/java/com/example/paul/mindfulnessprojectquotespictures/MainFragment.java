@@ -4,16 +4,11 @@ package com.example.paul.mindfulnessprojectquotespictures;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
@@ -21,7 +16,6 @@ import android.widget.TextView;
  * A simple {@link Fragment} subclass.
  */
 public class MainFragment extends Fragment {
-
 
     public MainFragment() {
         // Required empty public constructor
@@ -47,24 +41,19 @@ public class MainFragment extends Fragment {
         button1.setOnClickListener(new View.OnClickListener() {
 
 
-
             @Override
             public void onClick(View v) {
-////]
-//                Fragment fr;
-//                FragmentManager fm;
-//                FragmentTransaction fragmentTransaction;
-//
-//                fr = new MainFragment();
-//                fm = getSupportFragmentManager();
-//                fragmentTransaction = fm.beginTransaction();
-//                fragmentTransaction.add(R.id.fragment_area, fr);
-//                fragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-////                fragmentTransaction.addToBackStack(null);
-//                fragmentTransaction.commit();
+
+                ChooseOptionsFragment chooseOptionsFragment = new ChooseOptionsFragment();
+                final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.fragment_container, chooseOptionsFragment, "Choose Options Fragment");
+                ft.addToBackStack(null);
+                ft.commit();
+
             }
 
         });
         return v;
     }
+
 }
