@@ -8,6 +8,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -28,7 +30,8 @@ public class MainFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_main, container, false);
         Button button1 = (Button)  v.findViewById(R.id.get_started_button);
-
+        
+        final Animation translateAnim = AnimationUtils.loadAnimation(this.getActivity(), R.anim.anim_translate);
 
         TextView tx = (TextView) v.findViewById(R.id.welcome_screen_txt);
         Button get_started_btn = (Button) v.findViewById(R.id.get_started_button);
@@ -43,7 +46,6 @@ public class MainFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-
                 ChooseOptionsFragment chooseOptionsFragment = new ChooseOptionsFragment();
                 final FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.replace(R.id.fragment_container, chooseOptionsFragment, "Choose Options Fragment");
