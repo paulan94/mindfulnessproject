@@ -20,7 +20,7 @@ public class MainActivity extends FragmentActivity {
         main_screen = (FrameLayout)findViewById(R.id.fragment_container);
 
         //animations
-        final Animation screenFadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        final Animation screenFadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in_start);
 
         //screenAnimation fade in
         main_screen.startAnimation(screenFadeIn);

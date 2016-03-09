@@ -3,6 +3,7 @@ package com.example.paul.mindfulnessprojectquotespictures;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
+
 
 
 /**
@@ -40,26 +42,34 @@ public class MainFragment extends Fragment {
 
         tx.setTypeface(custom_font);
         get_started_btn.setTypeface(amatic);
+
         final Animation translateAnim = AnimationUtils.loadAnimation(getActivity(), R.anim.anim_translate);
         button1.setOnClickListener(new View.OnClickListener() {
+
 
 
             @Override
             public void onClick(View v) {
 
-
                 v.startAnimation(translateAnim);
 
-                ChooseOptionsFragment chooseOptionsFragment = new ChooseOptionsFragment();
-                final FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.fragment_container, chooseOptionsFragment, "Choose Options Fragment");
-                ft.addToBackStack(null);
-                ft.commit();
 
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        ChooseOptionsFragment chooseOptionsFragment = new ChooseOptionsFragment();
+                        final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                        ft.replace(R.id.fragment_container, chooseOptionsFragment);
+                        ft.addToBackStack(null);
+                        ft.commit();
+                    }
+                }, 500);
             }
 
 
         });
+
         return v;
     }
 

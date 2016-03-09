@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/meditation_screen_frag"
+    android:layout_height="match_parent"
+    tools:context="com.example.paul.mindfulnessprojectquotespictures.MeditationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/BtnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/TextViewTime"
+            android:layout_toStartOf="@+id/TextViewTime" />
+
+        <Button
+            android:id="@+id/BtnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            android:layout_alignTop="@+id/BtnStart"
+            android:layout_toRightOf="@+id/TextViewTime"
+            android:layout_toEndOf="@+id/TextViewTime" />
+
+        <TextView
+            android:id="@+id/TextViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/BtnStop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:textSize="25sp"/>
+
+
+
+    </RelativeLayout>
+</FrameLayout>
