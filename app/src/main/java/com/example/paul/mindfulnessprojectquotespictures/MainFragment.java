@@ -30,8 +30,7 @@ public class MainFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_main, container, false);
         Button button1 = (Button)  v.findViewById(R.id.get_started_button);
-        
-        final Animation translateAnim = AnimationUtils.loadAnimation(this.getActivity(), R.anim.anim_translate);
+
 
         TextView tx = (TextView) v.findViewById(R.id.welcome_screen_txt);
         Button get_started_btn = (Button) v.findViewById(R.id.get_started_button);
@@ -41,11 +40,16 @@ public class MainFragment extends Fragment {
 
         tx.setTypeface(custom_font);
         get_started_btn.setTypeface(amatic);
+        final Animation translateAnim = AnimationUtils.loadAnimation(getActivity(), R.anim.anim_translate);
         button1.setOnClickListener(new View.OnClickListener() {
 
 
             @Override
             public void onClick(View v) {
+
+
+                v.startAnimation(translateAnim);
+
                 ChooseOptionsFragment chooseOptionsFragment = new ChooseOptionsFragment();
                 final FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.replace(R.id.fragment_container, chooseOptionsFragment, "Choose Options Fragment");
@@ -53,6 +57,7 @@ public class MainFragment extends Fragment {
                 ft.commit();
 
             }
+
 
         });
         return v;
