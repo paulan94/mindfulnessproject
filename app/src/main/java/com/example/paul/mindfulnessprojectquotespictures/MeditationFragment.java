@@ -51,6 +51,7 @@ public class MeditationFragment extends Fragment {
         BtnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 timer.start();
             }
         });

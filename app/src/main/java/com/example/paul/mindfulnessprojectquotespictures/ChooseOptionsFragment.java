@@ -42,8 +42,9 @@ public class ChooseOptionsFragment extends Fragment {
         tx.setTypeface(windsong);
 
         Button medButton = (Button)v.findViewById(R.id.meditation_button);
-        Button bx2 = (Button)v.findViewById(R.id.other_button);
+        Button quoteButton = (Button)v.findViewById(R.id.quote_button);
 
+        //meditation button stuff
         medButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -57,10 +58,24 @@ public class ChooseOptionsFragment extends Fragment {
 
             }
         });
+        //open up quote screen
+        quoteButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+                //meditation fragment
+                QuotesMainFragment quotesMainFragment = new QuotesMainFragment();
+                final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.fragment_container, quotesMainFragment);
+                ft.addToBackStack(null);
+                ft.commit();
+
+            }
+        });
 
         Typeface amatic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/AmaticSC-Regular.ttf");
         medButton.setTypeface(amatic);
-        bx2.setTypeface(amatic);
+        quoteButton.setTypeface(amatic);
 
         return v;
     }
