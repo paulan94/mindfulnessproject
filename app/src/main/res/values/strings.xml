@@ -10,7 +10,39 @@
 
     
     <!--QUOTES-->
-    <string name="unnamed_quote_1">It's good to have places of comfort so we can go into those places to help us unwind and recharge.</string>
+
+    <string-array name="quote_list">
+        <item>It\'s good to have places of comfort so we can go into those places to help us unwind and recharge.</item>
+        <item>The best way to become a billionaire is to help a billion people.</item>
+        <item>The fishermen know that the sea is dangerous and the storm terrible, but they have never found these dangers sufficient reason for remaining ashore.</item>
+        <item>Every man is happy until happiness is suddenly a goal.</item>
+        <item>Nothing fails like success</item>
+        <item>I believe that when things are bad I can change them.</item>
+        <item>When you are casual about life you will end up a casualty.</item>
+        <item>There is a difference between failure and being a failure.</item>
+        <item>Don\'t be stuck. Keep moving.</item>
+        <item>Destiny is not a matter of chance; it\'s a matter of choice. It is not a thing to be waited for; it is a thing to be achieved.</item>
+        <item>Change is never a matter of ability, it\'s a matter of motivation.</item>
+        <item>Before you ask something of someone else, ask everything of yourself.</item>
+        <item>The people who are crazy enough to think they can change the world are the ones who do.</item>
+        <item>A person can change his future by merely changing his attitude.</item>
+        <item>Nothing is real that is not eternal.</item>
+        <item>Don\'t be yourself, be your best self.</item>
+        <item>You only live once, but if you work it right, once is enough.</item>
+        <item>Only those who will risk going too far can possibly find out how far one can go.</item>
+        <item>The world is against me, it wouldn\'t be fair otherwise</item>
+        <item>The loser and the winner both fail, the winner gets back up and does it again.</item>
+        <item>Every problem, every challenge that you have, is ultimately an opportunity.</item>
+        <item>Whether you think you can or think you can\'t, you\'re right</item>
+        <item>Feel fear and do it anyway.</item>
+        <item>Well-makers lead the water(wherever they like); fletchers bend the arrow; carpenters bend a log of wood; wise people fashion themselves.</item>
+        <item>Imagination is more powerful than knowledge.</item>
+        <item>To accomplish great things, we must not only act, but also dream; not only plan, but also believe.</item>
+        <item>Sometimes you will never know the value of a moment until it is a memory.</item>
+        <item>If you limit your choices to what seems possible or reasonable, you disconnect yourself from what you truly want and all that is left is compromise.</item>
+    </string-array>
+
+    <string name="unnamed_quote_1">It\'s good to have places of comfort so we can go into those places to help us unwind and recharge.</string>
     <string name="unnamed_quote_2">The best way to become a billionaire is to help a billion people.</string>
     <string name="unnamed_quote_3">The fishermen know that the sea is dangerous and the storm terrible, but they have never found these dangers sufficient reason for remaining ashore.</string>
     <string name="unnamed_quote_4">Every man is happy until happiness is suddenly a goal.</string>
@@ -18,20 +50,20 @@
     <string name="unnamed_quote_6">I believe that when things are bad I can change them.</string>
     <string name="unnamed_quote_7">When you are casual about life you will end up a casualty.</string>
     <string name="unnamed_quote_8">There is a difference between failure and being a failure.</string>
-    <string name="unnamed_quote_9">Don't be stuck. Keep moving.</string>
-    <string name="unnamed_quote_10">Destiny is not a matter of chance; it's a matter of choice. It is not a thing to be waited for; it is a thing to be achieved.</string>
-    <string name="unnamed_quote_11">Change is never a matter of ability, it's a matter of motivation.</string>
+    <string name="unnamed_quote_9">Don\'t be stuck. Keep moving.</string>
+    <string name="unnamed_quote_10">Destiny is not a matter of chance; it\'s a matter of choice. It is not a thing to be waited for; it is a thing to be achieved.</string>
+    <string name="unnamed_quote_11">Change is never a matter of ability, it\'s a matter of motivation.</string>
     <string name="unnamed_quote_12">Before you ask something of someone else, ask everything of yourself.</string>
     <string name="unnamed_quote_13">The people who are crazy enough to think they can change the world are the ones who do.</string>
     <string name="unnamed_quote_14">A person can change his future by merely changing his attitude.</string>
     <string name="unnamed_quote_15">Nothing is real that is not eternal.</string>
-    <string name="unnamed_quote_16">Don't be yourself, be your best self.</string>
+    <string name="unnamed_quote_16">Don\'t be yourself, be your best self.</string>
     <string name="unnamed_quote_17">You only live once, but if you work it right, once is enough.</string>
     <string name="unnamed_quote_18">Only those who will risk going too far can possibly find out how far one can go.</string>
-    <string name="unnamed_quote_19">The world is against me, it wouldn't be fair otherwise</string>
+    <string name="unnamed_quote_19">The world is against me, it wouldn\'t be fair otherwise</string>
     <string name="unnamed_quote_20">The loser and the winner both fail, the winner gets back up and does it again.</string>
     <string name="unnamed_quote_21">Every problem, every challenge that you have, is ultimately an opportunity.</string>
-    <string name="unnamed_quote_22">Whether you think you can or think you can't, you're right</string>
+    <string name="unnamed_quote_22">Whether you think you can or think you can\'t, you\'re right</string>
     <string name="unnamed_quote_23">Feel fear and do it anyway.</string>
     <string name="unnamed_quote_24">Well-makers lead the water(wherever they like); fletchers bend the arrow; carpenters bend a log of wood; wise people fashion themselves.</string>
     <string name="unnamed_quote_25">Imagination is more powerful than knowledge.</string>
