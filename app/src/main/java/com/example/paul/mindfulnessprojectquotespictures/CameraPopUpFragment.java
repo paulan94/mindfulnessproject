@@ -35,7 +35,7 @@ public class CameraPopUpFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 popup_text_view.setVisibility(View.GONE);
-                MeditationFragment.CameraFragment cameraFragment = new MeditationFragment.CameraFragment();
+                CameraFragment cameraFragment = new CameraFragment();
                 final FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.replace(R.id.fragment_container, cameraFragment);
                 ft.addToBackStack(null);

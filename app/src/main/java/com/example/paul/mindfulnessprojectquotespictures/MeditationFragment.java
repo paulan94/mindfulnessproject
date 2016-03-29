@@ -38,9 +38,9 @@ public class MeditationFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_meditation, container, false);
 
 
-        BtnStart = (Button)v.findViewById(R.id.BtnStart);
-        BtnStop = (Button)v.findViewById(R.id.BtnStop);
-        TextViewTime = (TextView)v.findViewById(R.id.TextViewTime);
+        BtnStart = (Button) v.findViewById(R.id.BtnStart);
+        BtnStop = (Button) v.findViewById(R.id.BtnStop);
+        TextViewTime = (TextView) v.findViewById(R.id.TextViewTime);
 
         TextViewTime.setText("00:03:00");
 
@@ -65,19 +65,20 @@ public class MeditationFragment extends Fragment {
 
     @TargetApi(Build.VERSION_CODES.GINGERBREAD)
     @SuppressLint("NewApi")
-    public class CounterClass extends CountDownTimer{
+    public class CounterClass extends CountDownTimer {
 
-        public CounterClass(long millisInFuture, long countDownInterval){
-            super (millisInFuture, countDownInterval);
+        public CounterClass(long millisInFuture, long countDownInterval) {
+            super(millisInFuture, countDownInterval);
         }
+
         @TargetApi(Build.VERSION_CODES.GINGERBREAD)
         @SuppressLint("NewApi")
         @Override
         public void onTick(long millisUntilFinished) {
             long millis = millisUntilFinished;
             String hms = String.format("%02d:%02d:%02d", TimeUnit.MILLISECONDS.toHours(millis),
-                    TimeUnit.MILLISECONDS.toMinutes(millis)-TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
-                    TimeUnit.MILLISECONDS.toSeconds(millis)-TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
+                    TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
+                    TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
             System.out.println(hms);
             TextViewTime.setText(hms);
         }
@@ -89,21 +90,5 @@ public class MeditationFragment extends Fragment {
 
 
     }
-
-    public static class CameraFragment extends Fragment {
-
-
-        public CameraFragment() {
-            // Required empty public constructor
-        }
-
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            // Inflate the layout for this fragment
-            return inflater.inflate(R.layout.fragment_camera, container, false);
-        }
-
-    }
 }
+
