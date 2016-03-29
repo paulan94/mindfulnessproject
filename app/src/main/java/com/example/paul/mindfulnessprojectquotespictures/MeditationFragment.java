@@ -13,9 +13,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
 
@@ -93,4 +90,20 @@ public class MeditationFragment extends Fragment {
 
     }
 
+    public static class CameraFragment extends Fragment {
+
+
+        public CameraFragment() {
+            // Required empty public constructor
+        }
+
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            // Inflate the layout for this fragment
+            return inflater.inflate(R.layout.fragment_camera, container, false);
+        }
+
+    }
 }

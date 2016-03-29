@@ -41,23 +41,27 @@ public class ChooseOptionsFragment extends Fragment {
         Typeface windsong = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Windsong.ttf");
         tx.setTypeface(windsong);
 
-        Button medButton = (Button)v.findViewById(R.id.meditation_button);
+
+        Button recordButton = (Button)v.findViewById(R.id.camera_button);
         Button quoteButton = (Button)v.findViewById(R.id.quote_button);
+        Button medButton = (Button)v.findViewById(R.id.meditation_button);
+
 
         //meditation button stuff
-        medButton.setOnClickListener(new View.OnClickListener(){
+        recordButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
 
                 //meditation fragment
-                MeditationFragment meditationFragment = new MeditationFragment();
+                CameraPopUpFragment cameraPopUpFragment = new CameraPopUpFragment();
                 final FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.fragment_container, meditationFragment);
+                ft.replace(R.id.fragment_container, cameraPopUpFragment);
                 ft.addToBackStack(null);
                 ft.commit();
 
             }
         });
+
         //open up quote screen
         quoteButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -73,9 +77,26 @@ public class ChooseOptionsFragment extends Fragment {
             }
         });
 
+        //meditation button stuff
+        medButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+
+                //meditation fragment
+                MeditationFragment meditationFragment = new MeditationFragment();
+                final FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.fragment_container, meditationFragment);
+                ft.addToBackStack(null);
+                ft.commit();
+
+            }
+        });
+
+
         Typeface amatic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/AmaticSC-Regular.ttf");
         medButton.setTypeface(amatic);
         quoteButton.setTypeface(amatic);
+        recordButton.setTypeface(amatic);
 
         return v;
     }
