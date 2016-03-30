@@ -20,6 +20,8 @@
 
     <!--changed all lowercase b's to capital to match capture it font-->
     <string-array name="quote_list">
+        <item>The scariest thing is setting your goals too low and meeting them.
+        -Georges Saint Pierre</item>
         <item>It\'s good to have places of comfort so we can go into those places to help us unwind and recharge.</item>
         <item>The Best way to Become a Billionaire is to help a Billion people.</item>
         <item>The fishermen know that the sea is dangerous and the storm terriBle, But they have never found these dangers sufficient reason for remaining ashore.</item>

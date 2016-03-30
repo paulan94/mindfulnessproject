@@ -12,7 +12,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 
 /**
@@ -42,10 +45,13 @@ public class ChooseOptionsFragment extends Fragment {
         tx.setTypeface(windsong);
 
 
-        Button recordButton = (Button)v.findViewById(R.id.camera_button);
-        Button quoteButton = (Button)v.findViewById(R.id.quote_button);
-        Button medButton = (Button)v.findViewById(R.id.meditation_button);
+        ImageButton recordButton = (ImageButton)v.findViewById(R.id.camera_button);
+        ImageButton quoteButton = (ImageButton)v.findViewById(R.id.quote_button);
+        ImageButton medButton = (ImageButton)v.findViewById(R.id.meditation_button);
 
+        TextView recordButtonTextView = (TextView)v.findViewById(R.id.camera_button_textview);
+        TextView quoteButtonTextView = (TextView)v.findViewById(R.id.meditation_button_textview);
+        TextView meditationButtonTextView = (TextView)v.findViewById(R.id.meditation_button_textview);
 
         //meditation button stuff
         recordButton.setOnClickListener(new View.OnClickListener(){
@@ -53,9 +59,9 @@ public class ChooseOptionsFragment extends Fragment {
             public void onClick(View v) {
 
                 //meditation fragment
-                CameraPopUpFragment cameraPopUpFragment = new CameraPopUpFragment();
+                CameraFragment cameraFragment = new CameraFragment();
                 final FragmentTransaction ft = getFragmentManager().beginTransaction();
-                ft.replace(R.id.fragment_container, cameraPopUpFragment);
+                ft.replace(R.id.fragment_container, cameraFragment);
                 ft.addToBackStack(null);
                 ft.commit();
 
@@ -94,9 +100,11 @@ public class ChooseOptionsFragment extends Fragment {
 
 
         Typeface amatic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/AmaticSC-Regular.ttf");
-        medButton.setTypeface(amatic);
-        quoteButton.setTypeface(amatic);
-        recordButton.setTypeface(amatic);
+
+
+        recordButtonTextView.setTypeface(amatic);
+        quoteButtonTextView.setTypeface(amatic);
+        meditationButtonTextView.setTypeface(amatic);
 
         return v;
     }

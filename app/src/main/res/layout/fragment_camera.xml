@@ -2,8 +2,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.paul.mindfulnessprojectquotespictures.CameraFragment">
+    tools:context="layout.CameraPopUpFragment">
 
+<RelativeLayout
+    android:id="@+id/popup_text_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/popup_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recording_page_popup_text"
+        android:gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/popup_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recording_page_popup_text2"
+        android:layout_below="@id/popup_text1"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/gotit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/got_it_popup"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/camera_stuff_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgClose"
+            android:layout_gravity="right|top"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"
+            android:padding="20dp"/>
+
+    </FrameLayout>
 
 
 </FrameLayout>

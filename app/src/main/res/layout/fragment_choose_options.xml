@@ -17,37 +17,73 @@
         android:textColor="#ffffff"
         android:layout_marginTop="20dp"/>
 
-    <Button
-        android:id="@+id/camera_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/cloud_button"
-        android:text="@string/camera_button_text"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:layout_margin="20dp"
-        android:layout_gravity="center_horizontal"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
 
-    <Button
-        android:id="@+id/quote_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/cloud_button"
-        android:text="@string/quotes_button_text"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        android:layout_margin="10dp"
-        android:layout_gravity="center|center_horizontal"/>
+        <ImageButton
+            android:id="@+id/camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cloud_button"/>
 
-    <Button
-        android:id="@+id/meditation_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/cloud_button"
-        android:text="@string/meditation_button_text"
-        android:textSize="25sp"
-        android:layout_margin="10dp"
-        android:layout_gravity="center|bottom"/>
+        <TextView
+            android:id="@+id/camera_button_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_button_text"
+            android:textSize="20sp"
+            android:layout_alignLeft="@+id/camera_button"
+            android:layout_alignTop="@+id/camera_button"
+            android:layout_alignRight="@+id/camera_button"
+            android:layout_alignBottom="@+id/camera_button"
+            android:layout_margin="1dp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/quote_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cloud_button"
+            android:layout_below="@id/camera_button" />
+
+        <TextView
+            android:id="@+id/quote_button_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quotes_button_text"
+            android:textSize="20sp"
+            android:layout_alignLeft="@+id/quote_button"
+            android:layout_alignTop="@+id/quote_button"
+            android:layout_alignRight="@+id/quote_button"
+            android:layout_alignBottom="@+id/quote_button"
+            android:layout_margin="1dp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/meditation_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cloud_button"
+            android:layout_below="@id/quote_button" />
+
+        <TextView
+            android:id="@+id/meditation_button_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meditation_button_text"
+            android:textSize="20sp"
+            android:layout_alignLeft="@+id/meditation_button"
+            android:layout_alignTop="@+id/meditation_button"
+            android:layout_alignRight="@+id/meditation_button"
+            android:layout_alignBottom="@+id/meditation_button"
+            android:layout_margin="1dp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
 
 
 
