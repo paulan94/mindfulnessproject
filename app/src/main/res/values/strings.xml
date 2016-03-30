@@ -7,7 +7,7 @@
     <string name="choose_options_title">Help Yourself</string>
     <string name="meditation_button_text">Meditation Timer</string>
     <string name="quotes_button_text">Quotes</string>
-    <string name="camera_button_text">Record Yourself</string>
+    <string name="camera_button_text">Self-Recording</string>
 
     <string name="get_quote_button_text">Generate random quote!</string>
 

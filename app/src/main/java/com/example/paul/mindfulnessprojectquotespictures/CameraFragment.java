@@ -39,6 +39,13 @@ public class CameraFragment extends Fragment {
         Button gotitButton = (Button)v.findViewById(R.id.gotit_button);
         final FrameLayout cameraView = (FrameLayout)v.findViewById(R.id.camera_stuff_view);
 
+        gotitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popup_text_view.setVisibility(View.GONE);
+                cameraView.setVisibility(View.VISIBLE);
+            }
+        });
         try{
             mCamera = Camera.open(1);//you can use open(int) to use different cameras
         } catch (Exception e){
@@ -59,16 +66,6 @@ public class CameraFragment extends Fragment {
                 System.exit(0);
             }
         });
-
-        gotitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                popup_text_view.setVisibility(View.GONE);
-                cameraView.setVisibility(View.VISIBLE);
-            }
-        });
-
         return v;
     }
-
 }

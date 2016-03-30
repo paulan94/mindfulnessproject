@@ -13,60 +13,62 @@
         android:layout_height="match_parent"
         android:text="@string/choose_options_title"
         android:gravity="center_horizontal"
-        android:textSize="40sp"
+        android:textSize="55sp"
         android:textColor="@color/white"
         android:layout_marginTop="20dp"/>
 
 
     <RelativeLayout
-        android:layout_width="wrap_content"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
 
         <info.hoang8f.widget.FButton
             android:id="@+id/camera_button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/roundedbutton"
             android:text="@string/camera_button_text"
             android:textSize="20sp"
-            fbutton:buttonColor="@color/grayButton"
-            fbutton:shadowColor="@color/grayButtonDark"
+            android:textColor="@color/white"
+            fbutton:buttonColor="@color/colorPrimary"
+            fbutton:shadowColor="@color/colorPrimaryDark"
             fbutton:shadowEnabled="true"
             fbutton:shadowHeight="5dp"
             fbutton:cornerRadius="5dp"
             android:paddingRight="15dp"
             android:paddingLeft="15dp"
-            android:layout_marginBottom="20dp"
-            android:layout_centerHorizontal="true"/>
+            android:layout_marginBottom="40dp"/>
 
         <info.hoang8f.widget.FButton
             android:id="@+id/quote_button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/roundedbutton"
             android:text="@string/quotes_button_text"
             android:textSize="20sp"
-            fbutton:buttonColor="@color/grayButton"
-            fbutton:shadowColor="@color/grayButtonDark"
+            android:textColor="@color/white"
+            fbutton:buttonColor="@color/colorPrimary"
+            fbutton:shadowColor="@color/colorPrimaryDark"
             fbutton:shadowEnabled="true"
             fbutton:shadowHeight="5dp"
             fbutton:cornerRadius="5dp"
-            android:paddingRight="55dp"
-            android:paddingLeft="55dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
             android:layout_below="@+id/camera_button"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="40dp"
             android:layout_centerHorizontal="true" />
 
         <info.hoang8f.widget.FButton
             android:id="@+id/meditation_button"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/roundedbutton"
             android:text="@string/meditation_button_text"
             android:textSize="20sp"
-            fbutton:buttonColor="@color/grayButton"
-            fbutton:shadowColor="@color/grayButtonDark"
+            android:textColor="@color/white"
+            fbutton:buttonColor="@color/colorPrimary"
+            fbutton:shadowColor="@color/colorPrimaryDark"
             fbutton:shadowEnabled="true"
             fbutton:shadowHeight="5dp"
             fbutton:cornerRadius="5dp"
