@@ -2,10 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     android:id="@+id/choose_options_layout"
     tools:context="com.example.paul.mindfulnessprojectquotespictures.ChooseOptionsFragment"
     android:background="@drawable/clouds_animated">
-
 
     <TextView
         android:id="@+id/choose_options_top"
@@ -14,77 +14,68 @@
         android:text="@string/choose_options_title"
         android:gravity="center_horizontal"
         android:textSize="40sp"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:layout_marginTop="20dp"/>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal">
 
-        <ImageButton
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <info.hoang8f.widget.FButton
             android:id="@+id/camera_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/cloud_button"/>
-
-        <TextView
-            android:id="@+id/camera_button_textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
             android:text="@string/camera_button_text"
             android:textSize="20sp"
-            android:layout_alignLeft="@+id/camera_button"
-            android:layout_alignTop="@+id/camera_button"
-            android:layout_alignRight="@+id/camera_button"
-            android:layout_alignBottom="@+id/camera_button"
-            android:layout_margin="1dp"
-            android:gravity="center"/>
+            fbutton:buttonColor="@color/grayButton"
+            fbutton:shadowColor="@color/grayButtonDark"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"/>
 
-        <ImageButton
+        <info.hoang8f.widget.FButton
             android:id="@+id/quote_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/cloud_button"
-            android:layout_below="@id/camera_button" />
-
-        <TextView
-            android:id="@+id/quote_button_textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
             android:text="@string/quotes_button_text"
             android:textSize="20sp"
-            android:layout_alignLeft="@+id/quote_button"
-            android:layout_alignTop="@+id/quote_button"
-            android:layout_alignRight="@+id/quote_button"
-            android:layout_alignBottom="@+id/quote_button"
-            android:layout_margin="1dp"
-            android:gravity="center"/>
+            fbutton:buttonColor="@color/grayButton"
+            fbutton:shadowColor="@color/grayButtonDark"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:paddingRight="55dp"
+            android:paddingLeft="55dp"
+            android:layout_below="@+id/camera_button"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true" />
 
-        <ImageButton
+        <info.hoang8f.widget.FButton
             android:id="@+id/meditation_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/cloud_button"
-            android:layout_below="@id/quote_button" />
-
-        <TextView
-            android:id="@+id/meditation_button_textview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
             android:text="@string/meditation_button_text"
             android:textSize="20sp"
-            android:layout_alignLeft="@+id/meditation_button"
-            android:layout_alignTop="@+id/meditation_button"
-            android:layout_alignRight="@+id/meditation_button"
-            android:layout_alignBottom="@+id/meditation_button"
-            android:layout_margin="1dp"
-            android:gravity="center"/>
+            fbutton:buttonColor="@color/grayButton"
+            fbutton:shadowColor="@color/grayButtonDark"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/quote_button"/>
 
     </RelativeLayout>
-
-
-
 
 
 </FrameLayout>

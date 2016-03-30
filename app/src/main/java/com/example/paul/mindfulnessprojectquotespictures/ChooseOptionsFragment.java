@@ -13,6 +13,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -45,13 +46,9 @@ public class ChooseOptionsFragment extends Fragment {
         tx.setTypeface(windsong);
 
 
-        ImageButton recordButton = (ImageButton)v.findViewById(R.id.camera_button);
-        ImageButton quoteButton = (ImageButton)v.findViewById(R.id.quote_button);
-        ImageButton medButton = (ImageButton)v.findViewById(R.id.meditation_button);
-
-        TextView recordButtonTextView = (TextView)v.findViewById(R.id.camera_button_textview);
-        TextView quoteButtonTextView = (TextView)v.findViewById(R.id.meditation_button_textview);
-        TextView meditationButtonTextView = (TextView)v.findViewById(R.id.meditation_button_textview);
+        Button recordButton = (Button)v.findViewById(R.id.camera_button);
+        Button quoteButton = (Button)v.findViewById(R.id.quote_button);
+        Button medButton = (Button)v.findViewById(R.id.meditation_button);
 
         //meditation button stuff
         recordButton.setOnClickListener(new View.OnClickListener(){
@@ -102,9 +99,9 @@ public class ChooseOptionsFragment extends Fragment {
         Typeface amatic = Typeface.createFromAsset(getActivity().getAssets(), "fonts/AmaticSC-Regular.ttf");
 
 
-        recordButtonTextView.setTypeface(amatic);
-        quoteButtonTextView.setTypeface(amatic);
-        meditationButtonTextView.setTypeface(amatic);
+        recordButton.setTypeface(amatic);
+        quoteButton.setTypeface(amatic);
+        medButton.setTypeface(amatic);
 
         return v;
     }
